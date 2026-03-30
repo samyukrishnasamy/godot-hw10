@@ -42,6 +42,3 @@ func _physics_process(delta):
 			if collision_normal.y < 0 and pre_collision_velocity.y > 0:
 				collision_normal.y = -collision_normal.y
 			collision.get_collider().apply_force(pre_collision_velocity * collision_normal * force_coefficient)
-
-		
-
